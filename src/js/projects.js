@@ -17,7 +17,7 @@ export const projects = (function () {
     const legend = DOM.elementCreator("legend", legendContainer, "Add Project");
 
     const deleteButton = DOM.elementCreator("img", legendContainer, "", {
-      src: "../src/images/delete.png",
+      src: "./../src/images/delete.png",
     });
     deleteButton.addEventListener("click", eventListeners.deleteProjectForm);
 
@@ -57,7 +57,7 @@ export const projects = (function () {
 
     const img = DOM.elementCreator("img", projectContainer, "", {
       id: "add-project-button",
-      src: "../src/images/plus.png",
+      src: "./../src/images/plus.png",
       alt: "add",
     });
     img.addEventListener("click", projects.addProject);
@@ -80,7 +80,7 @@ export const projects = (function () {
       });
 
       const projectBullet = DOM.elementCreator("img", leftContainer, "", {
-        src: "../src/images/bullet.png",
+        src: "./../src/images/bullet.png",
         class: `${projectArray[i]}`,
       });
       projectBullet.addEventListener("click", eventListeners.projectTab);
@@ -97,7 +97,7 @@ export const projects = (function () {
 
       const deleteButton = DOM.elementCreator("img", newProjectContainer, "", {
         class: `delete-button ${projectArray[i]}`,
-        src: "../src/images/delete.png",
+        src: "./../src/images/delete.png",
       });
       deleteButton.addEventListener("click", eventListeners.deleteProject);
     }

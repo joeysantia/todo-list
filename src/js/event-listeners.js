@@ -82,7 +82,6 @@ export const eventListeners = (function () {
         (givenTask.dueDate = dueDateInput.value);
 
       localStorage.setItem("taskArray", JSON.stringify(taskArray));
-      console.log(taskArray);
       DOM.section.removeChild(editForm);
       tabShifter();
       tasks.displayTasks();
@@ -99,7 +98,7 @@ export const eventListeners = (function () {
     );
 
     const deleteButton = DOM.elementCreator("img", legendContainer, "", {
-      src: "../src/images/delete.png",
+      src: "./../src/images/delete.png",
     });
     deleteButton.addEventListener("click", removePopup);
 

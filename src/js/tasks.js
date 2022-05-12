@@ -27,7 +27,6 @@ export const tasks = (function () {
     const form = DOM.elementCreator("form", DOM.section, "", {
       class: "task-form",
     });
-    console.log(form);
     form.addEventListener("submit", eventListeners.taskSubmit);
 
     const legendContainer = DOM.elementCreator("div", form, "", {
@@ -37,7 +36,7 @@ export const tasks = (function () {
     const legend = DOM.elementCreator("legend", legendContainer, "Add Task");
 
     const deleteButton = DOM.elementCreator("img", legendContainer, "", {
-      src: "../src/images/delete.png",
+      src: "./../src/images/delete.png",
     });
     deleteButton.addEventListener("click", eventListeners.deleteTaskForm);
 
@@ -142,7 +141,6 @@ export const tasks = (function () {
 
   function displayTasks() {
     let taskArray = JSON.parse(localStorage.getItem("taskArray"));
-    console.log(taskArray);
     eventListeners.tabShifter;
 
     let projectTasks = taskArray
@@ -184,13 +182,13 @@ export const tasks = (function () {
 
       const editButton = DOM.elementCreator("img", rightBox, "", {
         class: `edit-button ${projectTasks[i].title}`,
-        src: "../src/images/edit.png",
+        src: "./../src/images/edit.png",
       });
       editButton.addEventListener("click", eventListeners.editTask);
 
       const deleteButton = DOM.elementCreator("img", rightBox, "", {
         class: `delete-button ${projectTasks[i].title}`,
-        src: "../src/images/delete.png",
+        src: "./../src/images/delete.png",
       });
       deleteButton.addEventListener("click", eventListeners.deleteTask);
 
@@ -221,7 +219,7 @@ export const tasks = (function () {
           addTaskButtonContainer,
           "",
           {
-            src: "../src/images/plus.png",
+            src: "./../src/images/plus.png",
             alt: "add",
           }
         );
