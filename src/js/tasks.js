@@ -37,6 +37,7 @@ export const tasks = (function () {
 
     const deleteButton = DOM.elementCreator("img", legendContainer, "", {
       src: "./../src/images/delete.png",
+      class: 'delete-button'
     });
     deleteButton.addEventListener("click", eventListeners.deleteTaskForm);
 

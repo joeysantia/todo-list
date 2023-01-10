@@ -125,11 +125,14 @@ sidebar > div > div > h4 {
 }
 
 .delete-button {
-    opacity: 0;
+    height: 25px;
+    padding: 6px;
 }
 
 .delete-button:hover {
-    opacity: 1;
+    background: var(--sidebar-bg-color);
+    border-radius: 12px;
+    cursor: pointer; 
 }
 
 main {
@@ -228,15 +231,18 @@ input[type="checkbox"] {
 
 .task-button > img,
 .legend > img {
-    visibility: hidden;
+    /*visibility: hidden;*/
     height: 25px;
 }
 
+
+/*
 .task-button:hover > img,
 .legend:hover > img {
     visibility: visible;
     cursor: pointer;
 }
+*/
 
 .popup {
     position: absolute;

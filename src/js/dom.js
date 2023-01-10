@@ -41,6 +41,10 @@ export const DOM = (function () {
     return document.querySelector(".project-form");
   }
 
+  function popup() {
+    return document.querySelector(".popup")
+  }
+
   function elementCreator(childElement, parentElement, text, attributes) {
     let element = document.createElement(childElement);
 
@@ -78,5 +82,6 @@ export const DOM = (function () {
     addTaskButton,
     projectTitle,
     projectForm,
+    popup,
   };
 })();
