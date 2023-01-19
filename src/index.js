@@ -1,12 +1,16 @@
 import "./style.css";
-import eventListeners from "./js/event-listeners";
 import { storage } from "./js/storage";
-import { tasks } from "./js/tasks";
-import { projects } from "./js/projects";
+import  displayTasks  from "./js/displayTasks";
+import  displayProjects  from "./js/displayProjects";
+import { initializeApp } from "firebase/app";
+import { getFirebaseConfig } from "../firebase-config";
+import './js/nav'
 
 
-window.onload = function () {
+window.onload = () => {
+  const app = initializeApp(getFirebaseConfig())
   storage();
-  tasks.displayTasks();
-  projects.displayProjects();
+  displayTasks();
+  displayProjects();
+  console.log('does this even work')
 };

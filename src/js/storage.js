@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import { projects } from "./projects.js";
-import { tasks } from "./tasks.js";
+import { projects } from "./displayProjects.js";
+import { tasks } from "./taskForm.js";
 
 export function storage() {
   if (!localStorage.getItem("taskArray")) {

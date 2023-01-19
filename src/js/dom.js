@@ -1,51 +1,75 @@
-export const DOM = (function () {
+
+  const DOM = (() => {
+
+  
+  
   const section = document.querySelector("section");
   const mainHeading = document.querySelector("h2");
+  const loginButton = document.querySelector('.login-button')
   const inboxButton = document.querySelector(".inbox-button");
   const projectButtons = document.querySelector(".projects");
   const homeButtons = document.querySelectorAll(".home-button");
   const addButtons = document.querySelectorAll(".add-task-button");
   const addProjectButton = document.querySelector("#add-project-button");
 
-  function taskForm() {
+  const getTaskForm = () => {
     return document.querySelector(".task-form");
   }
 
-  function taskDueDate() {
+  const getTaskDueDate = () => {
     return document.querySelector("#due-date");
   }
-  function taskTitle() {
+  const getTaskTitle = () => {
     return document.querySelector("#title");
   }
-  function taskDescription() {
+  const getTaskDescription = () => {
     return document.querySelector("#description");
   }
 
-  function taskPriority() {
+  const getTaskPriority = () => {
     return document.querySelector("#priority");
   }
 
-  function taskDueDate() {
-    return document.querySelector("#due-date");
-  }
-
-  function addTaskButton() {
+  const getAddTaskButton = () => {
     return document.querySelector(".main-add-task-button");
   }
 
-  function projectTitle() {
+  const getProjectTitle = () => {
     return document.querySelector("#projectTitle");
   }
 
-  function projectForm() {
+  const getProjectForm = () => {
     return document.querySelector(".project-form");
   }
 
-  function popup() {
+  const getPopup = () => {
     return document.querySelector(".popup")
   }
 
-  function elementCreator(childElement, parentElement, text, attributes) {
+  return {
+    section,
+    mainHeading,
+    homeButtons,
+    loginButton,
+    inboxButton,
+    addButtons,
+    addProjectButton,
+    projectButtons,
+    getTaskForm,
+    getTaskTitle,
+    getTaskDescription,
+    getTaskDueDate,
+    getTaskPriority,
+    getAddTaskButton,
+    getProjectTitle,
+    getProjectForm,
+    getPopup,
+  };
+  })()
+
+  export default DOM;
+
+  export function elementCreator(childElement, parentElement, text, attributes) {
     let element = document.createElement(childElement);
 
     if (text) {
@@ -64,24 +88,3 @@ export const DOM = (function () {
 
     return element;
   }
-
-  return {
-    section,
-    mainHeading,
-    homeButtons,
-    inboxButton,
-    addButtons,
-    addProjectButton,
-    projectButtons,
-    taskForm,
-    taskTitle,
-    taskDescription,
-    taskDueDate,
-    taskPriority,
-    elementCreator,
-    addTaskButton,
-    projectTitle,
-    projectForm,
-    popup,
-  };
-})();
