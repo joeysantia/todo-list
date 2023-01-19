@@ -49,6 +49,7 @@ nav {
 nav > *,
 .home-button,
 .inbox-button,
+.login-button,
 #add-project-button {
     cursor: pointer;
 }
@@ -68,6 +69,21 @@ img {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.login-button {
+    height: 40px;
+    font-size: 14px;
+    padding: 4px 8px;
+    background: transparent;
+    border-radius: 6px;
+    border-style: solid;
+    border-color:rgb(0, 13, 26)
+}
+
+.login-button:hover {
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .add-task-button {
@@ -122,6 +138,17 @@ sidebar > div > div > h4 {
 
 .projects img {
     height: 20px;
+}
+
+.edit-button {
+    height: 25px;
+    padding: 6px;
+}
+
+.edit-button:hover {
+    background: var(--sidebar-bg-color);
+    border-radius: 12px;
+    cursor: pointer; 
 }
 
 .delete-button {

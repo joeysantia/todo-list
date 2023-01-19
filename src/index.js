@@ -5,6 +5,7 @@ import  displayProjects  from "./js/displayProjects";
 import { initializeApp } from "firebase/app";
 import { getFirebaseConfig } from "../firebase-config";
 import './js/nav'
+import './js/auth'
 
 
 window.onload = () => {

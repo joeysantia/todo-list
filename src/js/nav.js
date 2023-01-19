@@ -16,6 +16,8 @@ DOM.homeButtons.forEach((button) => {
     button.addEventListener("click", () => createTaskForm());
   });
 
+  
+
   export default function todayTab() {
     DOM.mainHeading.textContent = "Today";
   }
