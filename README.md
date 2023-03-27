@@ -1,10 +1,12 @@
-This is my first full CRUD application. It is also an exercise in webpack, prettier, ES6 modules, and writing code in a module pattern. 
+# Toodoo
 
-Live site: https://joeysantia.github.io/todo-list/
+This is a CRUD app that allows users to create tasks and projects. Data is stored on Google Firebase, or, if the user is not signed in, on their device's local storage.
 
-NOTE: due to Git issues, the original version was lost. This version was originally uploaded on April 9th 2022.
+## Live site: https://toodoo-8880b.web.app/dist/index.html
 
-FURTHER CHANGES
-1. Fix the delete button hover bug 
-2. Some "today" projects appear in the "inbox" and vice versa - fix this bug
-3. Add cloud storage
+## Further Changes
+1. Allow more project customization
+2. Allow users to upload images and other files
+3. Create productivity goals and trackers
+4. Allow users to create customized labels and other filters
+5. Edit logout button
